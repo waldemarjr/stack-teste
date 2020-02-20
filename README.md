@@ -3,6 +3,7 @@
 	- Estrutura criada para demonstração em minicurso apresentado em 10/09/2019 
 	- para capacitação interna de docentes - Centro Paula Souza.
 
+
 	# Instrutor: Waldemar Dibiazi Junior
 
 
