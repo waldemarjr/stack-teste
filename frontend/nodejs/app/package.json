@@ -1,0 +1,16 @@
+{
+  "name": "frontend-app",
+  "version": "1.0.0",
+  "description": "Frontend APP",
+  "author": "Waldemar Dibiazi Junior <waldemarjr@gmail.com>",
+  "license": "MIT",
+  "main": "app.js",
+  "keywords": [
+    "nodejs",
+    "bootstrap",
+    "express"
+  ],
+  "dependencies": {
+    "express": "^4.16.4"
+  }
+}

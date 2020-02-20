@@ -1,0 +1,44 @@
+var express = require("express");
+var app = express();
+var router = express.Router();
+
+var path = __dirname + '/htdocs/';
+const PORT = 3000;
+const HOST = '0.0.0.0';
+
+const axios = require('axios');
+
+
+app.listen(3000, function () {
+
+
+    async function makeRequest() {
+
+      const config = {
+          method: 'get',
+          url: 'http://backend_webserver:8000/getData.php'
+      }
+
+      let res = await axios(config)
+
+      console.log(res.status);
+      
+      router.use(function (req,res,next) {
+        console.log("/" + req.method);
+        next();
+      });
+      
+      router.get("/",function(req,res){
+        res.sendFile(path);
+        res.end("teste");
+      });
+
+      
+      
+    }
+
+    makeRequest();
+
+
+})
+
